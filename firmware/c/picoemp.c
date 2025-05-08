@@ -57,7 +57,7 @@ void picoemp_enable_pwm(float duty_frac) {
     // Init PWM, but don't start it yet
     pwm_init(slice, &config, false);
     // pwm_set_chan_level(slice, PWM_CHAN_A, 800); // pretty sure this line is pointless
-    pwm_set_freq_duty(slice, PWM_CHAN_A, 2500, duty_frac);
+    pwm_set_freq_duty(slice, PWM_CHAN_A, 60000, duty_frac);
     pwm_set_enabled(slice, true);
     pwm_enabled = true;
 }
