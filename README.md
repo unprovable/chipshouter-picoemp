@@ -10,6 +10,25 @@ The PicoEMP is a low-cost Electromagnetic Fault Injection (EMFI) tool, designed 
 
 You can see some details of the design in the [Intro Video](https://www.youtube.com/watch?v=nB5arJi-tVE).
 
+## What's New in This Version
+
+This is an 'edit' by [unprovable](https://github.com/unprovable) based on trying to make improvements from using available parts. The main changes are in the hardware:
+
+* Use of a `BSS138` MOSFET for `Q3` - same footprint, and [similar properties](https://www.onsemi.com/pdf/datasheet/bss138-d.pdf), but ultimately quite different from the recomended part.
+* Use of 1 Ohm resistor on `R4` to make more current available to `Q3`.
+
+In keeping with this hardware change there are a number of changes to the firmware in order to make this arrangement work:
+
+* Upping the base PWM freq to 60kHz (from 2.5kHz)
+* Upping the PWM pulse width parameter `PULSE_POWER_DEFAULT` to 0.12 (from 0.0122).
+
+There are  a few benefits from this setup:
+
+1. It charges up to 230V a little faster than the original design.
+2. It recharges back up to 230V significantly faster after each pulse.
+
+It's the combined effect of these two, plus the fact that I've see many more BSS138's available than AO3422 or PMV37ENEAR (where, when I ordered them, I was instead sent PMV37ENE2R's, which are not the same, with significantly lower voltage rating...) that has lead me to release this version. I've also put a few up for sale on Tindie (link to follow) in case anyone wants to use this as their gateway to EMFI!
+
 ## Thanks / Contributors
 
 PicoEMP is a community-focused project, with major contributions from:
