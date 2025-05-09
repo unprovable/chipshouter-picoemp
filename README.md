@@ -14,7 +14,7 @@ You can see some details of the design in the [Intro Video](https://www.youtube.
 
 This is an 'edit' by [unprovable](https://github.com/unprovable) based on trying to make improvements from using available parts. The main changes are in the hardware:
 
-* Use of a `BSS138` MOSFET for `Q3` - same footprint, and [similar properties](https://www.onsemi.com/pdf/datasheet/bss138-d.pdf), but ultimately quite different from the recomended part.
+* Use of a `BSS138` MOSFET for `Q3`/`Q4` - same footprint, and [similar properties](https://www.onsemi.com/pdf/datasheet/bss138-d.pdf), but ultimately quite different from the recomended part.
 * Use of 1 Ohm resistor on `R4` to make more current available to `Q3`.
 * Changed `R5` to 2.2k Ohm - 2k may be used but doesn't get you above 210V (so the HV LED doesn't come on).
 
