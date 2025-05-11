@@ -28,7 +28,7 @@ There are  a few benefits from this setup:
 1. It charges up to 230V a little faster than the original design.
 2. It recharges back up to 230V significantly faster after each pulse.
 
-It's the combined effect of these two, plus the fact that I've see many more BSS138's available than AO3422 or PMV37ENEAR (which, for me, are also proving hard to procure...) that has lead me to release this version. I've also put a few up for sale on Tindie (link: https://www.tindie.com/products/unprovable/picoemp-hacker-ed-improved-emfiemp-generator/) in case anyone wants to use this as their gateway to EMFI!
+It's the combined effect of these two, plus the fact that I've see many more BSS138's available than AO3422 or PMV37ENEAR (which, for me, are also proving hard to procure...) that has lead me to release this version. I've also put a few up for sale on Tindie (link: https://www.tindie.com/products/38670/) in case anyone wants to use this as their gateway to EMFI!
 
 ## Thanks / Contributors
 
