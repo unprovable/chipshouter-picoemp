@@ -14,7 +14,7 @@ You can see some details of the design in the [Intro Video](https://www.youtube.
 
 This is an 'edit' by [unprovable](https://github.com/unprovable) based on trying to make improvements from using available parts. The main changes are in the hardware:
 
-* Use of a `BSS138` MOSFET for `Q3`/`Q4` - same footprint, and [similar properties](https://www.onsemi.com/pdf/datasheet/bss138-d.pdf), but ultimately quite different from the recomended part.
+* Use of a `BSS138` MOSFET for `Q3`/`Q4` - same footprint, and [similar properties](https://www.onsemi.com/pdf/datasheet/bss138-d.pdf), but ultimately quite different from the recomended part in terms of its drain-source on-state resistance - 6 Ohms @ 4.5V, vs the recommended ~150 milliohms.
 * Use of 1 Ohm resistor on `R4` to make more current available to `Q3`.
 * Changed `R5` to 2.2k Ohm - 2k may be used but doesn't get you above 210V (so the HV LED doesn't come on).
 
@@ -28,7 +28,7 @@ There are  a few benefits from this setup:
 1. It charges up to 230V a little faster than the original design.
 2. It recharges back up to 230V significantly faster after each pulse.
 
-It's the combined effect of these two, plus the fact that I've see many more BSS138's available than AO3422 or PMV37ENEAR (where, when I ordered them, I was instead sent PMV37ENE2R's, which are not the same, with significantly lower voltage rating...) that has lead me to release this version. I've also put a few up for sale on Tindie (link to follow) in case anyone wants to use this as their gateway to EMFI!
+It's the combined effect of these two, plus the fact that I've see many more BSS138's available than AO3422 or PMV37ENEAR (which, for me, are also proving hard to procure...) that has lead me to release this version. I've also put a few up for sale on Tindie (link to follow) in case anyone wants to use this as their gateway to EMFI!
 
 ## Thanks / Contributors
 
